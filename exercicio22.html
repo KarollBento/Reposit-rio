@@ -1,0 +1,13 @@
+<script>
+      function palindromo (palavra){
+    let palavraReversa = palavra.split("").reverse().join("");
+
+if (palavra == palavraReversa) {
+  return "Palíndromo";
+} else {
+  return "Não é palíndromo";
+}
+    }
+    document.write(palindromo("ana"));
+
+</script>

@@ -1,0 +1,10 @@
+<script>
+let SalarioAtual = parseFloat(prompt("Digite o salário atual"));
+let Percentual= parseFloat(prompt("Digite o percentual de reajuste"));
+let Ajusteporc= Percentual / 100;
+let NovoSalario= ((SalarioAtual*Ajusteporc)+SalarioAtual);
+
+document.write([`O valor atual do seu salário é ${NovoSalario},00 reais.`]);
+</script>
+
+
