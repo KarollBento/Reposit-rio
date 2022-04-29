@@ -1,0 +1,16 @@
+<script>
+    function definiPositivoNegativo(num) {
+      if (isNaN(num)) {
+        return "Número inválido!";
+      } else {
+        if (num <= 0) {
+          return "Número negativo";
+        } else {
+          return "Número positivo";
+        }
+      }
+    }
+  
+    let num = parseFloat(prompt("Digite um número:"));
+    document.write(`<h1>${definiPositivoNegativo(num)}</h1>`);
+  </script>

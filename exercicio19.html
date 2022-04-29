@@ -1,11 +1,14 @@
 <script>
-    let numero = parseFloat(prompt("digite o número desejado: "));
-    function posNeg (numero){
-        if (numero > 0){
-        return "P";
-        } else {
-        return "N";
-        }
+    let valor = parseFloat(prompt("Digite o valor em reais:"));
+    let taxaImposto = parseFloat(prompt("Digite a % da taxa de imposto:"));
+  
+    function calculaImposto(valor, taxaImposto) {
+      if (isNaN(valor) || isNaN(taxaImposto)) {
+        alert("Dados Inválidos!");
+      } else {
+        document.write(`<h1>${valor + valor * (taxaImposto / 100)}</h1>`);
+      }
     }
-    document.write(posNeg(numero));
-</script>
+  
+    calculaImposto(valor, taxaImposto);
+  </script>
